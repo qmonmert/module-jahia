@@ -1,0 +1,17 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+
+[jnt:IntroIppon] > jnt:content, mix:title, jmix:structuredContent
+ - jcr:title (string) scoreboost=2.0
+ - body (string, richtext)
+ - image (weakreference, picker[type='image'])
+
+[jnt:utilisateur] > jnt:content, jmix:structuredContent
+ - name (string)
+ - firstname (string)
+
+[jnt:ArticleBlog] > jnt:content, jmix:structuredContent
+ - titre (string)
+ - auteur (string) = 'Quentin Monmert'
+ - contenu (string, richtext)
